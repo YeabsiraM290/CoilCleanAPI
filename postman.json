@@ -1,0 +1,26 @@
+{
+    "response1": {
+        "x": 1600,
+        "y": 1600,
+        "downstream_coeff": 0.85,
+        "max_dist_to_coil": 1000
+    },
+    "response2": {
+        "required_inactivation_rate": 99,
+        "max-inactivation_time": 60
+    },
+    "response23": {
+        "susceptibilityc_coefficient": 0.00051
+    },
+    "response231": {
+        "minimum_UV_irr_intensity": 500
+    },
+    "response3": {
+        "reflection_coeff": 0.5,
+        "min-dist-wall-x": 30,
+        "min-dist-wall-y": 130
+    },
+    "option": "SG12",
+    "microorganism_option": "ASPERGILLUS NIGER",
+    "opt_type": "Microorganism"
+}

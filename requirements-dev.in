@@ -1,0 +1,9 @@
+scikit-learn
+pandas
+streamlit
+flask
+matplotlib
+seaborn
+numpy
+streamlit-aggrid
+pip-tools
