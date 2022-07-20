@@ -3,7 +3,6 @@ from flask_cors import CORS
 from .apps.auth import *
 from .apps.auth import logout_blueprint
 from .apps.auth.google_login import *
-from .apps.views import *
 from .apps.views.images import *
 from .apps.views.optimize import *
 from .settings import *
@@ -16,7 +15,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = SQLALCHEMY_TRACK_MODIFICATIONS
 
 db.init_app(app)
 CORS(app)
-app.register_blueprint(test_post_blueprint)
 app.register_blueprint(optimize_blueprint)
 app.register_blueprint(get_images_blueprint)
 app.register_blueprint(login_blueprint)

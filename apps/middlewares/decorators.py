@@ -1,12 +1,8 @@
 from flask import request, make_response
 from functools import wraps
 import jwt
-from google.oauth2 import id_token
-from google_auth_oauthlib.flow import Flow
-import google.auth.transport.requests
 from ...database import *
 from ...settings import SECRET_KEY
-from ...apps.auth.helpers.db_helpers import get_user
 
 def check_token(token):
     black_listed = BlacklistedTokens.query.filter(BlacklistedTokens.token == token).first()

@@ -1,8 +1,7 @@
 import jwt
 from flask import Blueprint
-from flask import request, jsonify, make_response, session
+from flask import request, make_response, session
 from google.oauth2 import id_token
-from google_auth_oauthlib.flow import Flow
 import datetime as dt
 import google.auth.transport.requests
 from ...settings import SECRET_KEY
